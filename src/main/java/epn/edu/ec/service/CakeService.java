@@ -18,10 +18,10 @@ import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
 @RequiredArgsConstructor
-@Slf4j
+@Slf4j // Agrega esta anotación para habilitar el logging
 @Service
 public class CakeService {
-    private final CakeRepository cakeRepository;
+    private final CakeRepository cakeRepository; // Inyección de dependencia del repositorio
 
     public CakesResponse getCakes() {
         return new CakesResponse(cakeRepository.findAll().stream()

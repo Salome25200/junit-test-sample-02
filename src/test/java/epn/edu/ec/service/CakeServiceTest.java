@@ -29,8 +29,8 @@ import epn.edu.ec.repository.model.Cake;
 @ExtendWith(org.mockito.junit.jupiter.MockitoExtension.class)
 public class CakeServiceTest {
 
-    @Mock
-    private CakeRepository cakeRepository;
+    @Mock // Simula el comportamiento del repositorio de pasteles
+    private CakeRepository cakeRepository; // Inyección de dependencia simulada para el repositorio de pasteles
 
     @InjectMocks
     private CakeService cakeService;

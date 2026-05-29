@@ -9,10 +9,11 @@ import lombok.NoArgsConstructor;
 @Builder
 @NoArgsConstructor // Agrega un constructor sin argumentos
 @AllArgsConstructor
-public class CakeResponse {
+public class CustomerResponse {
 
     private long id;
-    private String title;
-    private String description;   
+    private String name;
+    private String number;
+    private boolean vip;
 
 }
